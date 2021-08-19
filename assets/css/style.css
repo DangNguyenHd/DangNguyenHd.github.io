@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main{
+    list-style: none;
+}
+/* header css */
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index:1;  
+}
+#nav{
+    display: inline-block;
+}
+#nav, #sub-nav{
+    list-style: none;
+}
+#nav>li{
+    position: relative;
+    display: inline-block;
+}
+#nav>li>a{
+    display: block;
+    padding: 0 14px;
+    line-height: 46px;
+}
+#nav>li:hover>a,
+#sub-nav>li:hover>a
+{
+    background: #ccc;
+    color: #000;
+}
+#nav>li:hover> #sub-nav{
+    display: block;
+}
+#sub-nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#sub-nav>li>a{
+    display: block;
+    min-width: 160px;
+    color:#000;
+    padding: 8px 16px;
+    
+}
+.search-icon{
+    display: block;
+    float: right;
+    color: #fff;
+    padding: 15px 24px;
+}.search-icon:hover{
+    cursor: pointer;
+    background: #f44336;
+}
+
+/* slider css */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider/la.jpg') top center /cover no-repeat;
+}
+    .text-content{
+        position: absolute;
+        bottom:0px;
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .text-heading{
+        line-height: 1.5;
+        margin: 10px 0px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    
+/* cotent css */
+#content{
+
+}   
+    /* Band section */
+    .section-content{
+        width: 800px;
+        margin: auto;
+        padding: 64px 16px;
+        text-align: center;
+    }
+    .section-heading{
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin: 10px 0px;
+    }
+    .section-slogan{
+        margin: 15px 0px;
+        font-style: italic;
+        font-size: 15px;
+        opacity: 0.6;
+    }
+    .section-decrip{
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .member-list{
+        padding: 32px 0px;
+    }
+    .member-name{
+        margin: 15px 0px;
+        font-size: 15px;
+    }
+    .member-img{
+        width: 60%;
+        border-radius: 4px;
+    }
+    /* tour section */
+    .tour-section{
+        background: #000;
+    }
+    .ticket-list{
+        background: #fff;
+    }
+    .ticket-list>li{
+        position: relative;
+        font-size: 15px;
+        padding: 8px 16px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+        line-height: 1.5; 
+    }
+    .ticket-list .sold-out{
+        display: inline-block;
+        padding: 0 8px;
+        background-color:#f44336;
+        color: white;
+        margin-left: 16px;
+    }
+    .ticket-list .ticket-quantity{
+        position: absolute;
+        right: 16px;
+        display:inline-block;
+        padding: 0px 8px;
+        background: #000;
+        border-radius: 50%;
+        
+    }
+    .tour{
+        margin: 32px -8px;
+    }
+    .tour-place{
+        padding: 0 8px;
+    }
+    .tour-img{
+        width: 100%;
+        display: block;
+    }
+    .tour-infor{
+        background: #fff;
+        padding: 0px 16px;
+        text-align: left;
+    }
+    .tour-city{
+        padding: 15px 0px;
+        font-weight: bold;
+    }
+    .tour-date{
+        font-size: 15px;
+        padding-bottom: 15px;
+        opacity: 0.6;
+    }
+    .tour-decrip{
+        font-size: 15px;
+        padding-bottom: 15px;
+        line-height: 1.5;
+    }
+    .btn-buy-ticket{
+        margin-bottom: 15px;
+    }
+    /* contact section */
+    .contact{
+        padding: 32px 0px;
+    }
+    .infor-list{
+        list-style: none;
+        text-align: left;
+    }
+    .infor-list>li{
+        font-size: 18px;
+        padding: 4px;
+    }
+    .contact-icon{
+        padding-right: 10px;
+    }
+    .contact-input{
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+    #name{
+        padding-right: 8px;
+    }
+    #emaill{
+        padding-left: 8px;
+    }
+    #message{
+        margin-top: 8px;
+    }
+    .btn-send{
+        margin-top: 16px;
+        float: right;
+    }
+
+    /* map section */
+    .map-section img{
+        width: 100%;
+    }
+/* footer css */
+#footer{
+    padding: 64px 16px;
+    font-size: 24px;
+    text-align: center;
+}
+    #social-list li a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    #social-list li{
+        display: inline-block;
+    }
+   #copyright{
+       margin: 15px 0px;
+       font-size: 15px;
+       color: rgba(0, 0, 0, 0.6);
+   }
+   #copyright a{
+        color: rgba(0, 0, 0, 0.6);
+   }
+/* modal css */
+.open{
+    display: flex !important;
+}
+#modal{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+#modal-container{
+    width: 900px;
+    margin: auto;
+    background: #fff;
+    animation: fadeIn ease .5s;
+}
+#modal-header{
+    position: relative;
+    background: #009688;
+    padding: 32px 16px;
+}
+.modal-heading{
+    margin: 10px 0px;
+    font-size: 30px;
+    text-align: center;
+    font-weight:500;
+    letter-spacing: 6px;
+}
+.bag{
+    margin-right:30px ;
+}
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 8px 16px;
+    font-size: 24px;
+}
+.modal-close:hover,
+.pay-btn:hover{
+    cursor: pointer;
+    color: #000;
+    background: #ccc;
+}
+#modal-body{
+    padding: 0px 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    padding: 15px 0px;
+}
+.modal-input{
+    width: 100%;
+    padding:8px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.pay-btn{
+    margin: 16px 0px;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 16px;
+    text-align: center;
+    background: #009688;
+    color: #fff
+}
+#modal-footer{
+    padding: 16px;
+    float: right;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
